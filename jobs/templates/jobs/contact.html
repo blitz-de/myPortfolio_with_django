@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+{% extends 'jobs/navigation.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="contact__page">
+    <div class="contact__container">
+        <div class="contact__title">
+            Contact Me
+        </div>
+
+        <div class="contact__socialMediaContainer">
+            <a href="https://www.facebook.com/sakhr.nabil"
+               class="contact__socialLink">
+                <button class="MuiButtonBase-root MuiIconButton-root"
+                    tabindex="0" type="button">
+                    <span class="MuiIconButton-label">
+                        <img src="{%static 'facebook.png' %}"
+                             class="MuiImgIcon-root icon MuiImgIcon-fontSizeLarge"
+                             focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <h3 class="contact__linkTitle">Facebook</h3>
+                    </span>
+                    <span class="MuiIconRipple-root"></span>
+                </button>
+            </a>
+            <a href="https://www.linkedin.com/in/sakhr-nabil-al-absi-9ab25559"
+               class="contact__socialLink">
+                <button class="MuiButtonBase-root MuiIconButton-root"
+                    tabindex="0" type="button">
+                    <span class="MuiIconButton-label">
+                        <img src="{%static 'linkedin.png' %}"
+                             class="MuiImgIcon-root icon MuiImgIcon-fontSizeLarge"
+                             focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <h3 class="contact__linkTitle">LinkedIn</h3>
+                    </span>
+                    <span class="MuiIconRipple-root"></span>
+                </button>
+            </a>
+            <a href="mailto: sakhr270@gmail.com"
+               class="contact__socialLink">
+                <button class="MuiButtonBase-root MuiIconButton-root"
+                    tabindex="0" type="button">
+                    <span class="MuiIconButton-label">
+                        <img src="{%static 'gmail.png' %}"
+                             class="MuiImgIcon-root icon MuiImgIcon-fontSizeLarge"
+                             focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <h3 class="contact__linkTitle">Gmail</h3>
+                    </span>
+                    <span class="MuiIconRipple-root"></span>
+                </button>
+            </a>
+            <a href="https://github.com/blitz-de?tab=repositories
+               class="contact__socialLink">
+                <button class="MuiButtonBase-root MuiIconButton-root"
+                    tabindex="0" type="button">
+                    <span class="MuiIconButton-label">
+                        <img src="{%static 'github.png' %}"
+                             class="MuiImgIcon-root icon MuiImgIcon-fontSizeLarge"
+                             focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <h3 class="contact__linkTitle">Github</h3>
+                    </span>
+                    <span class="MuiIconRipple-root"></span>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

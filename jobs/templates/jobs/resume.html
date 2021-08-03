@@ -1,0 +1,13 @@
+{% extends 'jobs/navigation.html' %}
+{% load static %}
+
+{% block content %}
+        <dev class="resumepdfs">
+            <button class="btnpdf">
+                <a href="{% static 'sample.pdf' %}">Open Resume on browser</a>.
+            </button>
+            <button class="btnpdf">
+                <a href="{% static 'sample.pdf' %}"   download="resume_sakhrAlabsi">Download Resume</a>
+            </button>
+        </dev>
+{% endblock %}

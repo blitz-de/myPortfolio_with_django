@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+{% extends 'jobs/navigation.html' %}
+{% load static %}
+{% block content %}
+
+<div class="portfolio__page">
+    <div class="portfolio__container">
+        <div class="portfolio__title">Portfolio</div>
+        <div class="portfolio__bottomContainer">
+            <a class="github__link" href="https://github.com/blitz-de">
+                <center>
+                    <img src="{%static 'github.png' %}"
+                         class="MuiImgIcon-root MuiImgIcon-fontSizeLarge"
+                         focusable="true" viewBox="0 0 35 35" aria-hidden="true">
+                </center>
+                <dev class="project__title">GitHub Profile</dev>
+            </a>
+        </div>
+
+        <div class="portfolio__projects">
+            <div class="portfolio__row">
+                <center>
+                    <div class="project">
+                        <a href="https://ecommerce-feature3-gruppe6.herokuapp.com/" target="_blank" class ="project__link">
+                            <div class="project__title">
+                                Ecommerce Website with NodeJS & ReactJS
+                            </div>
+                            <img class="project__thumbnail" src="{%static 'images/ecommerceThumbnail.png' %}"  alt="ecommerce-website">
+                        </a>
+                    </div>
+                </center>
+            </div>
+            <div class="portfolio__row">
+                <center>
+                    <div class="project">
+                        <a href="https://sakhr-airbnb-clone.herokuapp.com/" target="_blank" class ="project__link">
+                            <div class="project__title">
+                                Airbnb-Clone with ReactJS
+                            </div>
+                            <img class="project__thumbnail" src="{%static 'images/airbnb-clone-photo.png' %}" alt="airbnb-clone-website">
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+
+</div>
+{% endblock %}

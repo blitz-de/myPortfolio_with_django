@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+      <script src="https://kit.fontawesome.com/8e4a2f7093.js" crossorigin="anonymous"></script>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Facebook open graph -->
+    <meta property="og:title" content="Testzentrum">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="article">
+
+
+    <!--<meta property="og:url" content="http://testzentrum-reinickendorf.de/">-->
+        <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--    Styles sheet-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+      <link href="{% static 'css/mobile.css' %}" rel="stylesheet">
+    <!-- Favicons -->
+
+    <script src="{%static 'js/jquery-3.6.0.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/bootstrap.min.js' %} " type="text/javascript"></script>
+
+    <script type="text/javascript">
+	window.useTrailingSlashes = true;
+	window.disableRightClick = false;
+</script>
+    <script src="https://use.fontawesome.com/0996af5151.js"></script>
+  </head>
+  <body>
+
+  <main>
+            <!-- The Top Navbar with buttons -->
+            <dev class="top_navbar">
+                <dev class="top_navbar_container">
+                    <a class="navBar__link" href="/">
+                        <button class="navBar__btn">
+                            <i class="fas fa-home" style="color:white"></i>
+                        </button>
+                    </a>
+                    <div class="navBar__btns">
+                        <a class="navBar__link" href="{% url 'portfolio' %}">
+                            <button class="navBar__btn">
+                                <h6 class="navBar__linkText">PORTFOLIO</h6>
+                            </button>
+                        </a>
+                        <a class="navBar__link" href="{% url 'resume'  %}">
+                            <button class="navBar__btn">
+                                <h6 class="navBar__linkText">RESUME</h6>
+                            </button>
+                        </a>
+                        <a class="navBar__link" href="{% url 'certifications' %}">
+                            <button class="navBar__btn">
+                                <h6 class="navBar__linkText">CERTIFICATIONS</h6>
+                            </button>
+                        </a>
+                        <a class="navBar__link" href="{% url 'aboutme' %}">
+                            <button class="navBar__btn">
+                                <h6 class="navBar__linkText">ABOUT ME</h6>
+                            </button>
+                        </a>
+                        <a class="navBar__link" href="{% url 'contact' %}">
+                            <button class="navBar__btn">
+                                <h6 class="navBar__linkText">CONTACT</h6>
+                            </button>
+                        </a>
+                    </div>
+
+                </dev>
+<!--                <p class="lead text-muted">Hi! My name is Sakhr. I enjoy building websites and I started this journey a couple of months ago and I want to keep learning it professionally a more professional environment with others whom I could learn from:)</p>-->
+<!--                <p>-->
+<!--                <a href="mailto:sakhr270@gmail.com" class="btn btn-primary my-2">Email Me</a>-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img src="{% static 'sakhr.jpg' %}" height="300"></img>&ndash;&gt;-->
+<!--            </div>-->
+            </dev>
+         </div>
+          {% block content %}
+          {% endblock %}
+  </main>
+  </body>
+</html>
+
+

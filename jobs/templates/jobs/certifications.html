@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+{% extends 'jobs/navigation.html' %}
+{% load static %}
+{% block content %}
+
+<div class="certifications__page">
+    <div class="certifications__container">
+        <div class="certifications__title">
+            Web-Development Certifications
+        </div>
+        <div class="certifications__all">
+            <div class="certifications__row">
+                <div class="certification">
+                    <a href="https://www.linkedin.com/learning/succeeding-in-web-development-full-stack-and-front-end?trk=share_certificate"
+                       >
+                        <div class="certification__title">
+                            Full Stack and Front End
+                            <br>
+                            Certification
+                        </div>
+                        <img class="certification__thumbnail"
+                             src="{%static 'certificate_fullstack.png' %}"
+                             alt="fullstack certificate">
+                    </a>
+                </div>
+                <div class="certification">
+                    <a href="https://www.linkedin.com/learning/user-experience-for-web-design?trk=share_certificate" class="certification__link">
+                        <div class="certification__title">
+                            User Experience for Web Design
+                            <br>
+                            Certification
+                        </div>
+                        <img class="certification__thumbnail"
+                             src="{% static 'certificate_web_design.png' %}"
+                             alt="Web Design certificate">
+                    </a>
+                </div>
+            </div>
+            <div class="certifications__row">
+                <div class="certification">
+                    <a href="https://www.linkedin.com/learning/ux-foundations-accessibility?trk=share_certificate" class="certification__link">
+                        <div class="certification__title">
+                            UX-Foundations: Accessibility
+                            <br>
+                            Certification
+                        </div>
+                        <img class="certification__thumbnail"
+                             src="{%static 'certificate_ux_foundations.png' %}"
+                             alt="UX-foundations certificate">
+                    </a>
+                </div>
+                <div class="certification">
+                    <a href="https://www.linkedin.com/learning/test-driven-development-in-django?trk=share_certificate" class="certification__link">
+                        <div class="certification__title">
+                            Test-Driven Development in Django
+                            <br>
+                            Certification
+                        </div>
+                        <img class="certification__thumbnail"
+                             src="{% static 'certificate_testDriver_django.png' %}"
+                             alt="Django Test driven certificate">
+                    </a>
+                </div>
+            </div>
+            <div class="certifications__row">
+                <div class="certification">
+                    <a href="https://www.linkedin.com/learning/learning-django-2?trk=share_certificate" class="certification__link">
+                        <div class="certification__title">
+                            Learning Django
+                            <br>
+                            Certification
+                        </div>
+                        <img class="certification__thumbnail"
+                             src="{% static 'certificate_learn_django.png' %}"
+                             alt="Learn django Certificate">
+                    </a>
+                </div>
+                <div class="certification">
+                    <a href="https://www.linkedin.com/learning/building-a-personal-portfolio-with-django?trk=share_certificate" class="certification__link">
+                        <div class="certification__title">
+                            Create a django portfolio
+                            <br>
+                            Certification
+                        </div>
+                        <img class="certification__thumbnail"
+                             src="{% static 'certificate_portfolio_django.png' %}"
+                             alt="portfolio django certificate">
+                    </a>
+                </div>
+            </div>
+            <div class="certifications__row">
+                <div class="certification">
+                    <a href="https://www.linkedin.com/learning/learning-sql-programming?trk=share_certificate" class="certification__link">
+                        <div class="certification__title">
+                            Learning SQL Programming
+                            <br>
+                            Certification
+                        </div>
+                        <img class="certification__thumbnail"
+                             src="{% static 'certificate_sql_2017.png' %}"
+                             alt="Learn SQL certificate">
+                    </a>
+                </div>
+                <div class="certification">
+                    <a href="https://www.udemy.com/certificate/UC-e0317af0-6cc5-4f48-9173-aafaccc03be0/" class="certification__link">
+                        <div class="certification__title">
+                            MERN Stack React Node Ecommerce
+                            <br>
+                            from Scratch to Deployment
+                            <br>Certification
+                        </div>
+                        <img class="certification__thumbnail"
+                             src="{% static 'certificate_Stack_React_Node_ecommerce.png' %}"
+                             alt="Create Ecommerce using React Certificate">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
