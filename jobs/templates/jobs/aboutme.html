@@ -1,12 +1,16 @@
+<!doctype html>
+<html lang="en">
 {% extends 'jobs/navigation.html' %}
 {% load static %}
 {% block content %}
+
+
           <div class="aboutMe__page">
               <div class="aboutMe__container">
                   <div class="aboutMe__Title">About Me</div>
                   <div class="aboutMe__section">
-                      <div class="aboutMe__sectionTitle">Early Life</div>
-                      <div class="aboutMe__sectionInfo">
+                    <input type=button name=type id='bt1' class="aboutMe__sectionTitle" value='Early Life' onclick="setVisibility('myDIV');";> 
+                    <div id ="myDIV" class="aboutMe__sectionInfo">
                           I was born in Sana'a, Yemen. I grew up there until I was 18.
                           Driven by the necessity for change, the well to face new challenges,
                           my curiosity to get to know new cultures & people
@@ -15,38 +19,44 @@
                       </div>
                   </div>
                   <div class="aboutMe__section">
-                      <div class="aboutMe__sectionTitle">Moved to Saarbrücken</div>
-                      <div class="aboutMe__sectionInfo">
-                      At the beginning of my journey I ended up starting my college in the university of Saaland,
+                      <!-- <div id="myDIV" class="aboutMe__sectionTitle">Moved to Saarbrücken</div> -->
+                      <input type=button name=type id='bt1' class="aboutMe__sectionTitle" value='Moving to Saarbrücken' onclick="setVisibility('myDIV2');";> 
+                      <div id ="myDIV2" class="aboutMe__sectionInfo">
+                      At the beginning of my journey I ended up starting my college in the university of Saarland,
                       where I had to finish Physics, Chemistry, Maths in the german language. I stayed there for
                       around 18 Months and afterwards I decided to keep widening my horizon and travelled to Berlin
                       after getting an acceptance to study Industrial Engineering and Management in the TU-Berlin.</div>
 
                   </div>
                   <div class="aboutMe__section">
-                      <div class="aboutMe__sectionTitle">Moved to Berlin</div>
-                      <div class="aboutMe__sectionInfo">
+                   <!-- <div id="myDIV" class="aboutMe__sectionTitle">Moved to Saarbrücken</div> -->
+                   <input type=button name=type id='bt1' class="aboutMe__sectionTitle" value='Moving to Berlin'onclick="setVisibility('myDIV3');";> 
+                   <div id ="myDIV3" class="aboutMe__sectionInfo">
                           After moving to Berlin, I instantly recognized it's multiculturalism, diversity and
                           beauty and I knew this is the place I should be at to find myself, self-develop,
                           and build my own business one day :).
                       </div>
                   </div>
                   <div class="aboutMe__section">
-                      <div class="aboutMe__sectionTitle">Education</div>
-                      <div class="aboutMe__sectionInfo">
+                    <input type=button name=type id='bt1' class="aboutMe__sectionTitle" value='University'onclick="setVisibility('myDIV4');";> 
+                    <div id ="myDIV4" class="aboutMe__sectionInfo">
                           After finishing my college in the University of Saarland, I applied for a place
-                          in the TU-Berlin for Industrial Engineering & Management.
-                          There I had subjects like: Statistics, Linear Algebra, Analysis,
+                          in TU-Berlin for the major of Industrial Engineering & Management.
+                          There, I took subjects like: Statistics, Linear Algebra, Analysis,
                           Marketing & Production Management, Innovation and Organisation Management,
-                          Mechanics, etc. After a while there I felt that most of the things
-                          we learn there and keep solving are actually already hard-coded into programs,
-                          where one only needs to know how those programs work to make all kinds of
-                          calculations to reach to any intended result. From there on, I knew that
-                          coding is the future, and one day it will also have to be tought in schools,
-                          because it just makes life easier. While I was working in d/f companies I noticed everyone
-                          was using Programs and Apps to make all the calculations needed and from there
-                          on I recognized the importance of being able to create these kind of instruments
-                          to utilize the knowledge one has to make a difference.
+                          Mechanics, etc. After a while, I noticed a repeated pattern of learning things
+                          in a way which make all the retained information obsolete after some time. We
+                          were learning how to calcualte things and how to solve issues with the traditional 
+                          pen & paper way. However, in all companies were I went and worked at, there were already
+                          programs solving the same problems we were still solving on paper. Even the employees were taught
+                          how to use these programs and not answer some theoretical questions regarding of how to calcualte 
+                          the mean, median, and mode of specific data sets. Therefore, I delved then into deep thinking of 
+                          what is going to be signigicant for the future and I also listend to the child within, the one
+                          who used to love playing with computers and always makes some fun things out of it's infinite horizon of
+                          possibilities. Therefore, I made then a very life-changing decision to start a new major, Applied Computer Science. 
+
+                          Hereafter, motivated and highly driven with the idea that I'll be able to implement any idea I 
+                          get and make something functional out of them where people can utilize and in a way make life easier and make my vision a reality.
                           <br><br>
                           From there on my journey in the HTW-Berlin began. Fascinated by the infinite spectrum
                           of computer science, I felt for the first time that I indeed found myself studying the right
@@ -54,8 +64,9 @@
                       </div>
                   </div>
                   <div class="aboutMe__section">
-                      <div class="aboutMe__sectionTitle">Working in the Support Industry</div>
-                      <div class="aboutMe__sectionInfo">
+                    <input type=button name=type id='bt1' class="aboutMe__sectionTitle" 
+                            value='Working in the Customer Support Section'onclick="setVisibility('myDIV5');";> 
+                    <div id ="myDIV5" class="aboutMe__sectionInfo">
                           During my studies I had to work to keep financing myself. My strong english helped me big time
                           to find different kind of jobs in call centers. By the beginning of it I worked with Sykes
                           and there it was necessary to keep a friendly tone all the time and try my best to keep my cool
@@ -70,8 +81,9 @@
                       </div>
                   </div>
                   <div class="aboutMe__section">
-                      <div class="aboutMe__sectionTitle">Working in the IT Industry</div>
-                      <div class="aboutMe__sectionInfo">
+                    <input type=button name=type id='bt1' class="aboutMe__sectionTitle" 
+                            value='Working in the IT Section'onclick="setVisibility('myDIV6');";> 
+                     <div id ="myDIV6" class="aboutMe__sectionInfo">
                             Now, as I started my Computer Science studies, I wanted also to start
                             working something which is somehow relevant to my studies. Therefore,
                           I started applying and got my first Job with BMG Rights and Management

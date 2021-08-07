@@ -82,6 +82,43 @@
           {% block content %}
           {% endblock %}
   </main>
+  <script language="JavaScript">
+    function setVisibility(id) {
+    if(document.getElementById('bt1').value=='Early Life' ){
+    document.getElementById('bt1').value = 'Early Life ';
+    document.getElementById(id).style.display = 'inline-block';
+    }
+    else if (document.getElementById('bt1').value=='Moving to Saarbrücken'){
+        document.getElementById('bt1').value = 'Moving to Saarbrücken';
+        document.getElementById(id).style.display = 'inline-block';
+    }
+    else if (document.getElementById('bt1').value=='Moving to Berlin'){
+        document.getElementById('bt1').value = 'Moving to Berlin';
+        document.getElementById(id).style.display = 'inline-block';
+    }
+    else if (document.getElementById('bt1').value=='University'){
+        document.getElementById('bt1').value = 'University';
+        document.getElementById(id).style.display = 'inline-block';
+    }
+    else if (document.getElementById('bt1').value=='Moving to Saarbrücken'){
+        document.getElementById('bt1').value = 'Moving to Saarbrücken';
+        document.getElementById(id).style.display = 'inline-block';
+    }
+    else if (document.getElementById('bt1').value=='Working in the Customer Support Section'){
+        document.getElementById('bt1').value = 'Working in the Customer Support Section';
+        document.getElementById(id).style.display = 'inline-block';
+    }
+    else if (document.getElementById('bt1').value=='Working in the IT Section'){
+        document.getElementById('bt1').value = 'Working in the IT Section';
+        document.getElementById(id).style.display = 'inline-block';
+    }
+    else{
+    document.getElementById('bt1').value = 'Early Life';
+    document.getElementById(id).style.display = 'none';
+    }
+    }
+    </script>
+
   </body>
 </html>
 

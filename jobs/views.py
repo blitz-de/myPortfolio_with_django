@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 import jobs
 from .models import Job
-
 # Create your views here.
 def homepage(request):
     jobs = Job.objects  #grab everything from db out of Job (this will represent a list of jobS)

@@ -165,9 +165,22 @@ body{
     font-weight: 375;
     color: #708090;
     margin-bottom: 5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    border: 0.2px solid #708070;
+    transition: auto;
+    text-decoration: none;
+    opacity: 0.6;
+    border-radius: 12px;
 }
 
+.aboutMe__sectionTitle:hover{
+    opacity: 1;
 
+}
 .aboutMe__sectionInfo {
     font-size: 19px;
     color: #708090;
@@ -498,4 +511,74 @@ h3 {
   .certifications__title {
     font-size: 27px;
   }
+}
+
+#myDIV {
+  /* width: 100%; */
+  /* padding: 50px 0; */
+  text-align: center;
+  background-color: Transparent;
+  outline: none;
+  cursor: pointer;
+  /* visibility: none; */
+  /* background-color: lightblue; */
+  /* margin-top: 20px; */
+  display: none;
+}
+#myDIV2 {
+    /* width: 100%; */
+    /* padding: 50px 0; */
+    text-align: center;
+    background-color: Transparent;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    /* background-color: lightblue; */
+    /* margin-top: 20px; */
+  }
+#myDIV3 {
+    /* width: 100%; */
+    /* padding: 50px 0; */
+    text-align: center;
+    background-color: Transparent;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    /* background-color: lightblue; */
+    /* margin-top: 20px; */
+  }
+#myDIV4 {
+  /* width: 100%; */
+  /* padding: 50px 0; */
+  text-align: center;
+  background-color: Transparent;
+  outline: none;
+  cursor: pointer;
+  display: none;
+  /* background-color: lightblue; */
+  /* margin-top: 20px; */
+}
+
+#myDIV5 {
+  /* width: 100%; */
+  /* padding: 50px 0; */
+  text-align: center;
+  background-color: Transparent;
+  outline: none;
+  cursor: pointer;
+  display: none;
+  /* background-color: lightblue; */
+  /* margin-top: 20px; */
+}
+
+#myDIV6 {
+  /* width: 100%; */
+  /* padding: 50px 0; */
+  text-align: center;
+  background-color: Transparent;
+  outline: none;
+  cursor: pointer;
+  display: none;
+  /* background-color: lightblue; */
+  /* margin-top: 20px; */
 }
