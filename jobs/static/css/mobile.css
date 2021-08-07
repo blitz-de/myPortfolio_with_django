@@ -63,13 +63,26 @@
         .aboutMe__section {
             width: 370px;
             left: 50%;
+            right: 50%;
             margin: 0 auto;
             align-items: center;
             justify-content: center;
             /* z-index: 15; */
     }
 }
-
+@media only screen and  (max-width: 400px){
+    .aboutMe__sectionTitle {
+        width: 370px;
+        left: 50%;
+        right: 50%;
+        text-overflow: clip;
+        font-size: 20px;
+        margin: 10px auto;
+        align-items: center;
+        justify-content: center;
+        /* z-index: 15; */
+}
+}
 @media only screen and (max-width: 400px) {
     .portfolio__page {
         position: absolute;

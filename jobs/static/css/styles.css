@@ -64,6 +64,9 @@
     font-family: "Rokkitt";
     font-weight: bold;
 }
+
+
+
 .navBar__btn {
     transition-duration: 0.4s;
     margin-right: 7px;
@@ -162,10 +165,10 @@ body{
 }
 .aboutMe__sectionTitle {
     font-size: 25px;
-    font-weight: 375;
-    color: #708090;
+    font-weight: bold;
+    color: white;
     margin-bottom: 5px;
-    background-color: transparent;
+    background-color: grey;
     background-repeat: no-repeat;
     cursor: pointer;
     overflow: hidden;
@@ -173,12 +176,15 @@ body{
     border: 0.2px solid #708070;
     transition: auto;
     text-decoration: none;
-    opacity: 0.6;
+    opacity: 0.3;
     border-radius: 12px;
 }
 
 .aboutMe__sectionTitle:hover{
     opacity: 1;
+    background-color: transparent;
+    color: #708090;
+
 
 }
 .aboutMe__sectionInfo {
