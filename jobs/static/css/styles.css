@@ -168,22 +168,33 @@ body{
     font-weight: bold;
     color: white;
     margin-bottom: 5px;
-    background-color: grey;
+    /* background: rgba(0.4, 0.4, 0,2, 0.54, 0.3) */
+    background-color: rgb(175, 175, 175);
     background-repeat: no-repeat;
     cursor: pointer;
-    overflow: hidden;
+    text-overflow: clip;
     outline: none;
     border: 0.2px solid #708070;
-    transition: auto;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
     text-decoration: none;
-    opacity: 0.3;
+    opacity: 01;
+    overflow: overlay;
     border-radius: 12px;
+    justify-content: center;
+    z-index: 15;
 }
 
 .aboutMe__sectionTitle:hover{
     opacity: 1;
     background-color: transparent;
     color: #708090;
+
+
+}
+.aboutMe__sectionTitle:focus{
+    opacity: 0.3;
+    background-color: transparent;
+    color: black;
 
 
 }
@@ -588,3 +599,14 @@ h3 {
   /* background-color: lightblue; */
   /* margin-top: 20px; */
 }
+#myDIV7 {
+    /* width: 100%; */
+    /* padding: 50px 0; */
+    text-align: center;
+    background-color: Transparent;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    /* background-color: lightblue; */
+    /* margin-top: 20px; */
+  }
