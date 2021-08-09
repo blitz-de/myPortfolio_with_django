@@ -1,13 +1,14 @@
+<title>Resume</title>
 {% extends 'jobs/navigation.html' %}
 {% load static %}
-
+<!-- {% load i18n %} -->
 {% block content %}
         <dev class="resumepdfs">
             <button class="btnpdf">
-                <a href="{% static 'sample.pdf' %}">Open Resume on browser</a>.
+                <a href="{% static 'Sakhr Al-absi Lebenslauf.pdf' %}">Open Resume on browser</a>.
             </button>
             <button class="btnpdf">
-                <a href="{% static 'sample.pdf' %}"   download="resume_sakhrAlabsi">Download Resume</a>
+                <a href="{% static 'Sakhr Al-absi Lebenslauf.pdf' %}"   download="resume_sakhrAlabsi">Download Resume</a>
             </button>
         </dev>
 {% endblock %}

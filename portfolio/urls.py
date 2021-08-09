@@ -35,3 +35,16 @@ urlpatterns = [
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# urlpatterns = [
+#     path('i18n/', include('django.conf.urls.i18n')),
+#     path('admin/', admin.site.urls),
+#     path('', jobs.views.homepage, name='homepage'),
+#     # path('home', jobs.views.home, name='home'),
+#     path('jobs/<int:job_id>', jobs.views.detail, name='detail'),
+#     path('resume', jobs.views.resume, name='resume'),
+#     path('portfolio/', jobs.views.portfolio, name='portfolio'),
+#     path('aboutme/', jobs.views.aboutme, name='aboutme'),
+#     path('certifications/', jobs.views.certifications, name='certifications'),
+#     path('contact/', jobs.views.contact, name='contact'),
+# ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
