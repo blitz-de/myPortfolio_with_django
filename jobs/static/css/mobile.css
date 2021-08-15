@@ -283,3 +283,9 @@
         width: 280px;
     }
   }
+
+  @media only screen and (max-width: 400px) {
+    .lightbox{
+        margin-top: 50%;
+    }
+  }
