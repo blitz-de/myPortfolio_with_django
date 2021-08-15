@@ -1,14 +1,27 @@
-<title>Resume</title>
 {% extends 'jobs/navigation.html' %}
 {% load static %}
 <!-- {% load i18n %} -->
 {% block content %}
-        <dev class="resumepdfs">
-            <button class="btnpdf">
-                <a href="{% static 'Sakhr Al-absi Lebenslauf.pdf' %}">Open Resume on browser</a>.
-            </button>
-            <button class="btnpdf">
-                <a href="{% static 'Sakhr Al-absi Lebenslauf.pdf' %}"   download="resume_sakhrAlabsi">Download Resume</a>
-            </button>
-        </dev>
+<title>Resume</title>
+        <dev class="container">
+            <dev class="row">
+                <dev class="col-xs-2">
+                    <div class="bottom-wrapper">
+                    <button class="btnpdf">
+                        <a href="{% static 'Sakhr Al-absi Lebenslauf.pdf' %}" title="name.pdf">Open Resume on browser</a>.
+                    </button>
+                    <button class="btnpdf">
+                        <a href="{% static 'Sakhr Al-absi Lebenslauf.pdf' %}"   download="resume_sakhrAlabsi">Download Resume</a>
+                    </button>
+                </div>
+                </dev>
+            </dev>
+
+        <div class="wrap">
+            <div class="inner">
+                <img src="{% static 'CV_pic.png' %}">
+            </div>
+        </div>
+    </dev>
+
 {% endblock %}

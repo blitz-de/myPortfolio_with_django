@@ -138,4 +138,17 @@
                   </div>
               </div>
           </div>
+            <script>
+    function setVisibility(id) {
+        if(document.getElementById('bt1').value=='Early Life' ){
+        document.getElementById('bt1').value = 'Early Life ';
+        document.getElementById(id).style.display = 'inline-block';
+        }
+
+        else{
+        document.getElementById('bt1').value = 'Early Life';
+        document.getElementById(id).style.display = 'none';
+        }
+    }
+    </script>
       {% endblock %}

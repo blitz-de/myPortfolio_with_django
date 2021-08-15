@@ -25,6 +25,8 @@
 
     <script src="{%static 'js/jquery-3.6.0.min.js' %}" type="text/javascript"></script>
     <script src="{% static 'js/bootstrap.min.js' %} " type="text/javascript"></script>
+    <script src="{%static 'js/hideAboutMeButtons.js' %}" type="text/javascript"></script>
+
 
     <script type="text/javascript">
 	window.useTrailingSlashes = true;
@@ -36,6 +38,7 @@
 
   <main>
             <!-- The Top Navbar with buttons -->
+            <div class="wrapper">
             <dev class="top_navbar">
                 <dev class="top_navbar_container">
                     <a class="navBar__link" href="/">
@@ -72,53 +75,13 @@
                     </div>
 
                 </dev>
-<!--                <p class="lead text-muted">Hi! My name is Sakhr. I enjoy building websites and I started this journey a couple of months ago and I want to keep learning it professionally a more professional environment with others whom I could learn from:)</p>-->
-<!--                <p>-->
-<!--                <a href="mailto:sakhr270@gmail.com" class="btn btn-primary my-2">Email Me</a>-->
-<!--                </p>-->
-<!--&lt;!&ndash;                <img src="{% static 'sakhr.jpg' %}" height="300"></img>&ndash;&gt;-->
-<!--            </div>-->
+            </div>
+
             </dev>
          </div>
           {% block content %}
           {% endblock %}
   </main>
-  <script language="JavaScript">
-    function setVisibility(id) {
-    if(document.getElementById('bt1').value=='Early Life' ){
-    document.getElementById('bt1').value = 'Early Life ';
-    document.getElementById(id).style.display = 'inline-block';
-    }
-    // else if (document.getElementById('bt1').value=='Moving to Saarbrücken'){
-    //     document.getElementById('bt1').value = 'Moving to Saarbrücken';
-    //     document.getElementById(id).style.display = 'inline-block';
-    // }
-    // else if (document.getElementById('bt1').value=='Moving to Berlin'){
-    //     document.getElementById('bt1').value = 'Moving to Berlin';
-    //     document.getElementById(id).style.display = 'inline-block';
-    // }
-    // else if (document.getElementById('bt1').value=='University'){
-    //     document.getElementById('bt1').value = 'University';
-    //     document.getElementById(id).style.display = 'inline-block';
-    // }
-    // else if (document.getElementById('bt1').value=='Moving to Saarbrücken'){
-    //     document.getElementById('bt1').value = 'Moving to Saarbrücken';
-    //     document.getElementById(id).style.display = 'inline-block';
-    // }
-    // else if (document.getElementById('bt1').value=='Working in the Customer Support Section'){
-    //     document.getElementById('bt1').value = 'Working in the Customer Support Section';
-    //     document.getElementById(id).style.display = 'inline-block';
-    // }
-    // else if (document.getElementById('bt1').value=='Working in the IT Section'){
-    //     document.getElementById('bt1').value = 'Working in the IT Section';
-    //     document.getElementById(id).style.display = 'inline-block';
-    // }
-    else{
-    document.getElementById('bt1').value = 'Early Life';
-    document.getElementById(id).style.display = 'none';
-    }
-    }
-    </script>
 
   </body>
 </html>
